@@ -1,37 +1,52 @@
 package org.mountcloud.springcloud.common.mongo.setting;
 
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 
 
-@Configuration
-@ConfigurationProperties(prefix="mongo")
+/**
+  * @author zhanghaishan
+  * @version V1.0
+  *
+  * TODO: mongo连接池的配置
+  * 2020/1/17.
+  */
 public class MongoSetting {
 
+	@Value("${mongo.connectionsPerHost}")
 	private int connectionsPerHost;
-	
+
+	@Value("${mongo.connectTimeout}")
 	private int connectTimeout;
-	
+
+	@Value("${mongo.heartbeatConnectTimeout}")
 	private int heartbeatConnectTimeout;
-	
+
+	@Value("${mongo.maxConnectionIdleTime}")
 	private int maxConnectionIdleTime;
-	
+
+	@Value("${mongo.maxConnectionLifeTime}")
 	private int maxConnectionLifeTime;
-	
+
+	@Value("${mongo.minConnectionsPerHost}")
 	private int minConnectionsPerHost;
-	
+
+	@Value("${mongo.requiredReplicaSetName}")
 	private String requiredReplicaSetName;
-	
+
+	@Value("${mongo.minHeartbeatFrequency}")
 	private int minHeartbeatFrequency;
-	
-	
+
+	@Value("${mongo.socketKeepAlive}")
 	private boolean socketKeepAlive;
-	
-	
+
+	@Value("${mongo.heartbeatSocketTimeout}")
 	private int heartbeatSocketTimeout;
-	
+
+	@Value("${mongo.threadsAllowedToBlockForConnectionMultiplier}")
 	private int threadsAllowedToBlockForConnectionMultiplier;
 
 	public int getConnectionsPerHost() {

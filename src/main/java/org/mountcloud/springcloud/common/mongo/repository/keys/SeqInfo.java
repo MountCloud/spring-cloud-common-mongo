@@ -5,11 +5,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 /**
- * 模拟序列类
- *
- * @author Jastar·Wang
- * @date 2017年5月27日
- */
+  * @author zhanghaishan
+  * @version V1.0
+  *
+  * TODO: 此类用于生成唯一的连续id
+  * 2020/1/17.
+  */
 @Document(collection = "sequence")
 public class SeqInfo {
 
@@ -22,7 +23,6 @@ public class SeqInfo {
     @Field
     private Long seqId;// 序列值
 
-    // 省略getter、setter
 
     public String getId() {
         return id;

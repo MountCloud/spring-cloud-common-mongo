@@ -19,8 +19,7 @@ import java.lang.reflect.Field;
 import java.util.Date;
 
 /**
- * TODO:
- * com.ugirls.listener
+ * TODO: 保存mongo数据时的监听
  * 2019/4/11.
  *
  * @author zhanghaishan
@@ -75,8 +74,7 @@ public class SaveEventListener extends AbstractMongoEventListener<Object> {
     /**
      * 获取下一个自增ID
      *
-     * @param collName
-     *            集合（这里用类名，就唯一性来说最好还是存放长类名）名称
+     * @param collName 集合（这里用类名，就唯一性来说最好还是存放长类名）名称
      * @return 序列值
      */
     private Long getNextId(String collName) {

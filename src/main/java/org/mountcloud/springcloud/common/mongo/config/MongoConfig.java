@@ -15,7 +15,13 @@ import org.springframework.data.mongodb.core.convert.MappingMongoConverter;
 import org.springframework.data.mongodb.core.mapping.MongoMappingContext;
 import com.mongodb.ReadPreference;
 
-@Configuration
+/**
+  * @author zhanghaishan
+  * @version V1.0
+  *
+  * TODO: 这个类的主要作用，是用于维护mongo的连接池
+  * 2020/1/17.
+  */
 public class MongoConfig {
 
 	@Autowired
