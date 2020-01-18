@@ -5,19 +5,19 @@
 	<parent>
 		<groupId>org.mountcloud</groupId>
 		<artifactId>spring-cloud-common-parent</artifactId>
-		<version>2.2.1.RELEASE-Hoxton.RELEASE-1.0</version>
+		<version>2.2.1.RELEASE-Hoxton.RELEASE-1.1</version>
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.mountcloud</groupId>
 	<artifactId>spring-cloud-common-mongo</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0</version>
+	<version>1.1</version>
 
 	<description>This project contains the necessary components of spring boot mongo and mvc constraints.</description>
 
 	<name>${project.groupId}:${project.artifactId}</name>
-	<url>https://github.com/MountCloud/spring-cloud-common-parent</url>
+	<url>https://github.com/MountCloud/spring-cloud-common-mongo</url>
 
 	<!-- 开发者信息 -->
 	<developers>
@@ -37,9 +37,9 @@
 	
 	<!-- “采购”信息，主要是自己项目的git仓库 -->
 	<scm>
-		<connection>scm:git:git@github.com:MountCloud/spring-cloud-common-parent.git</connection>
-		<developerConnection>scm:git:git@github.com:MountCloud/spring-cloud-common-parent.git</developerConnection>
-		<url>git@github.com:MountCloud/spring-cloud-common-parent.git</url>
+		<connection>scm:git:git@github.com:MountCloud/spring-cloud-common-mongo.git</connection>
+		<developerConnection>scm:git:git@github.com:MountCloud/spring-cloud-common-mongo.git</developerConnection>
+		<url>git@github.com:MountCloud/spring-cloud-common-mongo.git</url>
 	</scm>
 
 	<dependencies>
