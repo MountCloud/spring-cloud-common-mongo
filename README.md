@@ -29,6 +29,7 @@
    After referencing the project, the mongo function will be enabled. If you need to use the mongo connection pool, you need to:
 ```
 Use @EnableMongoConnectionPool to enable mongo connection pool function and configure:
+
 mongo:
     connectionsPerHost: 20
     connectTimeout: 50000
@@ -52,6 +53,7 @@ mongo:
   引用项目后会开启mongo功能，如果需要使用mongo连接池则需要：
 ```
 使用@EnableMongoConnectionPool开启mongo连接池功能，并且配置：
+
 mongo:
    connectionsPerHost: 20
    connectTimeout: 50000
